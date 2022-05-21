@@ -16,8 +16,9 @@ ofstream inputFile;
 
 void open_lib_file()
 {
+#ifdef w
     cout << "Открываем файл: библиотека" << endl;
-    
+#endif
     inputFile.open("/Users/leruni/Desktop/library.txt");
 }
 
@@ -28,13 +29,15 @@ void fill_lib_file()
 
 void close_lib_file()
 {
+#ifdef w
     cout << "Закрываем файл" << endl;
-    
+#endif
     inputFile.close();
     
 }
 
-void file_answer()
+void print_programm_aim()
+
 {
-    cout << "Цель: поиск фамилии в файле и вывод его" << endl;
+    cout << "Цель: поиск фамилии в файле и вывод его\n" << endl;
 }

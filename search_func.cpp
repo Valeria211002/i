@@ -48,17 +48,13 @@ void search_year()
     inputFile2.open("/Users/leruni/Desktop/library.txt");
     
     cout << "Введите год рождения: ";
-    cin >> Input2;
+  
     cout << endl;
 
-    copy(istream_iterator<int>(inputFile2),
-    istream_iterator<int>(),
-    back_inserter(Year));
 
-    if (find(Year.begin(), Year.end(), Input2) != Year.end())
-        cout << "Год рождения, " << Input2 << ",год найден\n"<< endl;
-    else
-        cout << "Год рождения, "<< Input2 <<",год не найден\n" << endl;
+     //   cout << "Год рождения, " <<  << ",год найден\n"<< endl;
+ //   else
+ //       cout << "Год рождения, "<<  <<",год не найден\n" << endl;
    
   
     inputFile2.close();
